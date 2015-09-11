@@ -1,9 +1,19 @@
 # Getting Started
-This is a short wiki for Ebola Aid Team members needing to set up their development environment for this project.
+This is a short wiki for Ebola Aid Team members needing to set up their development environment for this project. The following prerequisites must be completed before we can begin development.
+
+## Java
+First, we must install Java on our machines, since Android applications are built upon Java.
+
+1. Download the appropriate Java Runtime Environment (JRE) package for your OS (Windows, Mac, Linux): http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
+  + Note that x86 is for 32-bit and x64 is for 64-bit architectures, so check the system info on your machine to determine which one your OS runs on.
+  + <code>.tar.gz</code> files are compressed (similar to <code>.zip</code>) whereas <code>.exe</code> files are Windows executables. <code>.dmg</code> is an Apple disk image. It doesn't really matter which one you choose, as you will just have to unzip the file if it is compressed.
+2. Run the JRE installer that you just downloaded.
 
 ## Android Studio
+This is the IDE we will be using for Android development. 
+
 1. Download Android Studio: https://developer.android.com/sdk/index.html#Other 
-  + Under "All Android Studio Packages", select the file appropriate for your OS (Windows, Mac, Linux).
+  + Under "All Android Studio Packages", select the file appropriate for your OS.
 2. Install Android Studio: https://developer.android.com/sdk/installing/index.html?pkg=studio
 3. Add SDK Packages: https://developer.android.com/sdk/installing/adding-packages.html
   + Only steps 1, 2, and 4 are necessary; step 3 is optional and not really needed for our project at this point.
@@ -16,6 +26,7 @@ Git is a version control system that will allow us to maintain a history of our 
   + Mac: http://git-scm.com/download/mac
   + Windows: http://git-scm.com/download/win
 2. Create a GitHub account
+  + Please email ryanmawong@gmail.com with your GitHub username so that you can be added to the UBC-BEST-Ebola GitHub organization.
 3. Clone this project's Git repository
   + Open a terminal and use the command line to navigate to a directory that you would like to save the repository. 
   + Example:
