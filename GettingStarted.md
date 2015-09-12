@@ -32,17 +32,21 @@ Git is a version control system that will allow us to maintain a history of our 
   + Open a terminal and use the command line to navigate to a directory that you would like to save the repository. 
   + Example:
     + <code>mkdir "UBC BEST Projects"</code> (creates a new folder)
-    + <code>cd "UBC BEST Projects</code> (nagivate to the folder)
+    + <code>cd "UBC BEST Projects</code> (nagivates to the folder)
     + <code>git clone https://github.com/UBC-BEST-Ebola/ebola-aid</code> (makes a local copy of the repository)
   + Note that you may be prompted to enter your GitHub credentials before the cloning proceeds
 
+## Checkpoint (Sept. 12, 2015)
+Our actual Android project is still being set up and is not ready to be built yet, so we will use the old *bestclinic* repository to quickly verify that Android Studio was configured properly and can build a simple Android project.
+
+1. Navigate to a folder where you prefer to store your projects, similar to the example in the Git section above.
+2. Run the command <code>git clone https://\<username\>@bitbucket.org/bestresearch/bestclinic.git</code> (replace <code>\<username\></code> with your actual username). 
+  + *Tip:* Cloning may fail because your <code>~/.gitconfig</code> file may contain user credentials that do not match your Bitbucket account. You can perform a quick fix by editing the <code>[user]</code> field in <code>~/.gitconfig</code>.
+3. Launch Android Studio and if the "Quick Start" menu shows up, then click "Import Non-Android Studio Project". Otherwise, go to **File > Import Project...** and select the bestclinic folder.
+4. There should be a "play button" in the row of icons at the top of Android Studio. Click this to run the app. Android Studio will first build the project, and if it succeeds, then the Android app should launch in the connected device, or the emulator.
+  + The build may fail due to lacking package dependencies. The compiler should prompt you with a link to import these lacking dependencies, which should fix any issues.
+
 ## OpenMRS
-OpenMRS is an open source platform that we will be using to build the back-end of our EMR system. It is a web-based service that provides APIs that communicate the data from our front-end (aka the user interface of our Android application) to a database.
+OpenMRS is an open source platform that we will be using to build the back-end of our EMR system. It is a web-based service that provides APIs that communicate the data from our front-end (aka the user interface of our Android application) to a database. ***This component of our project is still being set up. Further instructions will be provided soon.***
 
-1. 
-
-## Running the App
-1. Launch Android Studio and click "Open an existing Android Studio Project".
-2. Select the "ebola-aid" folder.
-3. There should be a "play button" in the row of icons at the top of Android Studio. Click this to run the app. You can select whether you want to connect to your device or the emulator.
 
