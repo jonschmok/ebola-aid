@@ -4,10 +4,11 @@ This is a short wiki for Ebola Aid Team members needing to set up their developm
 ## Java
 First, we must install Java on our machines, since Android applications are built upon Java.
 
-1. Download the appropriate Java Runtime Environment (JRE) package for your OS (Windows, Mac, Linux): http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
+1. Download the appropriate Java Development Kit 7 (JDK 7) package for your OS (Windows, Mac, Linux) [**here**](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html).
   + Note that x86 is for 32-bit and x64 is for 64-bit architectures, so check the system info on your machine to determine which one your OS runs on.
   + <code>.tar.gz</code> files are compressed (similar to <code>.zip</code>) whereas <code>.exe</code> files are Windows executables. <code>.dmg</code> is an Apple disk image. It doesn't really matter which one you choose, as you will just have to unzip the file if it is compressed.
-2. Run the JRE installer that you just downloaded.
+  + **Important:** Android Studio currently does not support JDK 8, so make sure that your version is correct.
+2. Run the JDK installer that you just downloaded.
 
 ## Android Studio
 This is the IDE we will be using for Android development. 
