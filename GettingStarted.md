@@ -36,6 +36,11 @@ Git is a version control system that will allow us to maintain a history of our 
     + <code>git clone https://github.com/UBC-BEST-Ebola/ebola-aid</code> (makes a local copy of the repository)
   + Note that you may be prompted to enter your GitHub credentials before the cloning proceeds
 
+## OpenMRS
+OpenMRS is an open source platform that we will be using to build the back-end of our EMR system. It is a web-based service that provides APIs that communicate the data from our front-end (aka the user interface of our Android application) to a database.
+
+1. 
+
 ## Running the App
 1. Launch Android Studio and click "Open an existing Android Studio Project".
 2. Select the "ebola-aid" folder.
