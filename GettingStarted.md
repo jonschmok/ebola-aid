@@ -10,6 +10,12 @@ First, we must install Java on our machines, since Android applications are buil
   + **Important:** Android Studio currently does not support JDK 8, so make sure that your version is correct.
 2. Run the JDK installer that you just downloaded.
 
+## MySQL
+MySQL is a relatonal database that will essentially be storing all of our patient data in the back-end. We won't directly be interacting with MySQL in code, as OpenMRS has APIs that abstracts a lot of the complex database queries/commands and from us. However, we need to install MySQL on our dev machines so that the OpenMRS server can run.
+
+1. Go to http://www.sitepoint.com/how-to-install-mysql/ for instructions on how to install MySQL.
+  + Complete steps 1, 2, 4, 5, 6.
+
 ## Android Studio
 This is the IDE we will be using for Android development. 
 
@@ -49,4 +55,6 @@ Our actual Android project is still being set up and is not ready to be built ye
 ## OpenMRS
 OpenMRS is an open source platform that we will be using to build the back-end of our EMR system. It is a web-based service that provides APIs that communicate the data from our front-end (aka the user interface of our Android application) to a database. ***This component of our project is still being set up. Further instructions will be provided soon.***
 
-
+1. Navigate to a project folder of your choice, then run: <code>git clone https://github.com/openmrs/openmrs-core</code>
+2. <code>cd openmrs-core</code>
+3. <code>mvn clean install</code>
