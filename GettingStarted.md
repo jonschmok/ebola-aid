@@ -15,6 +15,7 @@ MySQL is a relatonal database that will essentially be storing all of our patien
 
 1. Go to http://www.sitepoint.com/how-to-install-mysql/ for instructions on how to install MySQL.
   + Complete steps 1, 2, 4, 5, 6.
+  + Correction for step 5: <code>mysqlbin</code> should be <code>mysql/bin</code>
 
 ## Android Studio
 This is the IDE we will be using for Android development. 
