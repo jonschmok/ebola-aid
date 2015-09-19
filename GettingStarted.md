@@ -65,7 +65,8 @@ This step requires maven to build and run the source code for OpenMRS.
 2. <code>cd openmrs-core</code>
 3. <code>mvn clean install</code>
 4. Change to the <code>webapp</code> directory and run <code>mvn jetty:run</code>
-5. Open [http://localhost:8080/openmrs/](http://localhost:8080/openmrs) in a browser and run the setup (simple install with demo patient data)
+5. Wait until the command prompt reads "Starting scanner at interval of 10 seconds."
+6. Open http://localhost:8080/openmrs/ in a browser and run the setup (simple install with demo patient data)
  
 ### Run OpenMRS via the standalone application ###
 Use the standalone app **only** if you are unable to successfully build and run OpenMRS from source.
