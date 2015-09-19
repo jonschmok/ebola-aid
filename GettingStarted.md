@@ -44,7 +44,7 @@ Git is a version control system that will allow us to maintain a history of our 
     + <code>git clone https://github.com/UBC-BEST-Ebola/ebola-aid</code> (makes a local copy of the repository)
   + Note that you may be prompted to enter your GitHub credentials before the cloning proceeds
 
-## Checkpoint (Sept. 12, 2015)
+## Checkpoint
 Our actual Android project is still being set up and is not ready to be built yet, so we will create an Android app from the templates to quickly verify that Android Studio was configured properly and can build a simple Android project.
 
 1. **File > New Project**
