@@ -15,7 +15,8 @@ MySQL is a relatonal database that will essentially be storing all of our patien
 
 1. Go to http://www.sitepoint.com/how-to-install-mysql/ for instructions on how to install MySQL.
   + Complete steps 1, 2, 4, 5, 6.
-  + Correction for step 5: <code>mysqlbin</code> should be <code>mysql/bin</code>
+  + Coreection for step 4: The path for the data directory on Windows should be <code>C:\\mysql\\data"</code>
+  + Correction for step 5: <code>mysqlbin</code> should be <code>mysql/bin</code>. Also note that running <code>mysqld</code> will launch the application in the current terminal window, so you will need to open a new terminal window to run <code>mysql -u root</code>
 
 ## Android Studio
 This is the IDE we will be using for Android development. 
@@ -55,10 +56,22 @@ Our actual Android project is still being set up and is not ready to be built ye
 7. Press the play icon to build and run the app.
 
 ## OpenMRS
-OpenMRS is an open source platform that we will be using to build the back-end of our EMR system. It is a web-based service that provides APIs that communicate the data from our front-end (aka the user interface of our Android application) to a database. ***This component of our project is still being set up. Further instructions will be provided soon.***
+OpenMRS is an open source platform that we will be using to build the back-end of our EMR system. It is a web-based service that provides APIs that communicate the data from our front-end (aka the user interface of our Android application) to a database. Choose one of the two options to set up a local OpenMRS server:
+
+### Build/run OpenMRS from source ###
+This step requires maven to build and run the source code for OpenMRS.
 
 1. Navigate to a project folder of your choice, then run: <code>git clone https://github.com/openmrs/openmrs-core</code>
 2. <code>cd openmrs-core</code>
 3. <code>mvn clean install</code>
 4. Change to the <code>webapp</code> directory and run <code>mvn jetty:run</code>
 5. Open http://localhost:8080/openmrs/ in a browser and run the setup (simple install with demo patient data)
+ 
+### Run OpenMRS via the standalone application ###
+Use the standalone app **only** if you are unable to successfully build and run OpenMRS from source.
+
+1. Download, unzip and run https://sourceforge.net/projects/openmrs/files/releases/OpenMRS_2.2/openmrs-standalone-2.2.zip/download
+2. Download https://wiki.openmrs.org/download/attachments/74252444/webservices.rest-omod-2.12-20150615.175221-10.omod?version=1&modificationDate=1434391646461&api=v2
+3. Login with username "admin" and password "Admin123". Go to Administration -> Advanced Administration -> Manage Modules -> Add or Upgrade Module -> Type: xforms and hit install. Repeat to upgrade webservices.rest, but instead of typing upload the omod file downloaded in the previous step.
+4. Restart the server.
+5. You should be able to login using your Android Client given server is accessible over the network.
