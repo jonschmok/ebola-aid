@@ -60,3 +60,5 @@ OpenMRS is an open source platform that we will be using to build the back-end o
 1. Navigate to a project folder of your choice, then run: <code>git clone https://github.com/openmrs/openmrs-core</code>
 2. <code>cd openmrs-core</code>
 3. <code>mvn clean install</code>
+4. Change to the <code>webapp</code> directory and run <code>mvn jetty:run</code>
+5. Open http://localhost:8080/openmrs/ in a browser and run the setup (simple install with demo patient data)
