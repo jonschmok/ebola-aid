@@ -58,17 +58,20 @@ Our actual Android project is still being set up and is not ready to be built ye
 ## OpenMRS
 OpenMRS is an open source platform that we will be using to build the back-end of our EMR system. It is a web-based service that provides APIs that communicate the data from our front-end (aka the user interface of our Android application) to a database. Choose one of the two options to set up a local OpenMRS server:
 
-### Build/run OpenMRS from source ###
+### Build OpenMRS from source ###
 This step requires maven to build and run the source code for OpenMRS.
 
 1. Navigate to a project folder of your choice, then run: <code>git clone https://github.com/openmrs/openmrs-core</code>
 2. <code>cd openmrs-core</code>
 3. <code>mvn clean install</code>
-4. Change to the <code>webapp</code> directory and run <code>mvn jetty:run</code>
-5. Wait until the command prompt reads "Starting scanner at interval of 10 seconds."
-6. Open [http://localhost:8080/openmrs/](http://localhost:8080/openmrs/) in a browser and run the setup (simple install with demo patient data)
-7. When prompted, enter the password that you set up for MySQL.
-8. After installation, login with the username "admin" and password "Admin123".
+
+### Run OpenMRS ###
+1. On Windows, open a command prompt and activate the mysqld process by navigating to <code>...\mysql\bin</code> and entering <code>mysqld</code>. Leave this process running in the background.
+2. Change to the <code>webapp</code> directory and run <code>mvn jetty:run</code>
+3. Wait until the command prompt reads "Starting scanner at interval of 10 seconds."
+4. Open [http://localhost:8080/openmrs/](http://localhost:8080/openmrs/) in a browser and run the setup (simple install with demo patient data)
+ * If this is your first time opening OpenMRS, enter the password that you set up for MySQL when prompted.
+6. Login with the username "admin" and password "Admin123".
  
 ### Run OpenMRS via the standalone application ###
 Use the standalone app **only** if you are unable to successfully build and run OpenMRS from source.
