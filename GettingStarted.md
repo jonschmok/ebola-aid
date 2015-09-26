@@ -60,10 +60,17 @@ OpenMRS is an open source platform that we will be using to build the back-end o
 
 ### Build OpenMRS from source ###
 This step requires maven to build and run the source code for OpenMRS.
+If maven is not installed, go to the following link:
+http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html</br>
+Follow just the steps under the *Installation* header
 
 1. Navigate to a project folder of your choice, then run: <code>git clone https://github.com/openmrs/openmrs-core</code>
-2. <code>cd openmrs-core</code>
-3. <code>mvn clean install</code>
+2. On Windows, edit your environment variables as follows:
+ * Open the Environment Variables window by searching for it in the start menu
+ * Edit the PATH variable and add: ...\Java\jdk1.x.x\bin and ...\apache-maven-3.3.3-bin\apache-maven-3.3.3\bin, separated by semicolons
+ * Edit or create the JAVA_HOME variable and add: ...\Java\jdk1.x.x
+3. <code>cd openmrs-core</code>
+4. <code>mvn clean install</code>
 
 ### Run OpenMRS ###
 1. On Windows, open a command prompt and activate the mysqld process by navigating to <code>...\mysql\bin</code> and entering <code>mysqld</code>. Leave this process running in the background.
@@ -81,3 +88,8 @@ Use the standalone app **only** if you are unable to successfully build and run 
 3. Login with username "admin" and password "Admin123". Go to Administration -> Advanced Administration -> Manage Modules -> Add or Upgrade Module -> Type: xforms and hit install. Repeat to upgrade webservices.rest, but instead of typing upload the omod file downloaded in the previous step.
 4. Restart the server.
 5. You should be able to login using your Android Client given server is accessible over the network.
+
+
+### Troubleshooting ###
+* Error: javac: invalid target release: 1.x
+ * Try typing both <code>java -version</code> and <code>javac -version</code> into the command line. They should read the same version. If they do not, modify the environment variables so that they do.
